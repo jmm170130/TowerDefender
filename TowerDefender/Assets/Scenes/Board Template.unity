@@ -15246,6 +15246,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 813dbe9d162bdc64ba6ac8174cc04026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraSpeed: 30
+  minY: 15
+  maxY: 80
 --- !u!1001 &1497664219
 PrefabInstance:
   m_ObjectHideFlags: 0
