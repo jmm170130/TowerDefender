@@ -11,7 +11,7 @@ public class Attacker : MonoBehaviour
 
     void Start()
     {
-        target = Wavepoints.points[0];
+        target = Waypoints.points[0];
     }
 
     void Update()
@@ -27,7 +27,7 @@ public class Attacker : MonoBehaviour
 
     void nextPoint()
     {
-        if (wavepointIndex >= Wavepoints.points.Length - 1)
+        if (wavepointIndex >= Waypoints.points.Length - 1)
         {
             Destroy(gameObject);
             return;

@@ -20,6 +20,7 @@ public class WaveSpawner : MonoBehaviour
 
         if (countdown <= 0f)
         {
+            //spawnWave();
             StartCoroutine(spawnWave());
             countdown = intervalTime;
         }
