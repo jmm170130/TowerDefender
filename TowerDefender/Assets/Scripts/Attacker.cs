@@ -1,11 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Attacker : MonoBehaviour
 {
     public float speed = 10f;
-
+    public float maxHealth;
+    private float health;
+    private bool dead;
     private Transform target;
     private int wavepointIndex = 0;
 
