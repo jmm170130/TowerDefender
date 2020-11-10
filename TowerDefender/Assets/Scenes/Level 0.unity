@@ -6365,17 +6365,17 @@ PrefabInstance:
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 337
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -47
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 148.12349
+      value: 148.12347
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
@@ -6385,22 +6385,22 @@ PrefabInstance:
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
@@ -6456,6 +6456,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073122883876880477, guid: 77f465bb1ba10b54cb7295be5248c5fd,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.58431375
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073122883876880477, guid: 77f465bb1ba10b54cb7295be5248c5fd,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.58431375
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073122883876880477, guid: 77f465bb1ba10b54cb7295be5248c5fd,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.58431375
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880478, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
@@ -10938,17 +10953,17 @@ PrefabInstance:
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 467
+      value: 118
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -47
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 148.12349
+      value: 148.12347
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
@@ -10958,22 +10973,22 @@ PrefabInstance:
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
@@ -11029,6 +11044,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073122883876880477, guid: 77f465bb1ba10b54cb7295be5248c5fd,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.58431375
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073122883876880477, guid: 77f465bb1ba10b54cb7295be5248c5fd,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.58431375
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073122883876880477, guid: 77f465bb1ba10b54cb7295be5248c5fd,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.58431375
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880478, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
@@ -22067,17 +22097,17 @@ PrefabInstance:
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 195
+      value: -154
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -50
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 148.12349
+      value: 148.12347
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
@@ -22087,22 +22117,22 @@ PrefabInstance:
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8073122883876880475, guid: 77f465bb1ba10b54cb7295be5248c5fd,
         type: 3}
@@ -22143,6 +22173,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073122883876880477, guid: 77f465bb1ba10b54cb7295be5248c5fd,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073122883876880477, guid: 77f465bb1ba10b54cb7295be5248c5fd,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073122883876880477, guid: 77f465bb1ba10b54cb7295be5248c5fd,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.5849056
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77f465bb1ba10b54cb7295be5248c5fd, type: 3}
