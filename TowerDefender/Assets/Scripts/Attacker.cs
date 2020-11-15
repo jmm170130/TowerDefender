@@ -3,7 +3,9 @@ using UnityEngine.UI;
 
 public class Attacker : MonoBehaviour
 {
-    public float speed = 10f;
+    public float startSpeed = 10f;
+    [HideInInspector]
+    public float speed;
     public float maxHealth;
     private float health;
     private bool dead;
@@ -13,6 +15,7 @@ public class Attacker : MonoBehaviour
     void Start()
     {
         target = Wavepoints.points[0];
+        speed = startSpeed;
     }
 
     void Update()
@@ -24,6 +27,8 @@ public class Attacker : MonoBehaviour
         {
             nextPoint();
         }
+
+        speed = startSpeed;
     }
 
     void nextPoint()
@@ -35,5 +40,10 @@ public class Attacker : MonoBehaviour
         }
         wavepointIndex++;
         target = Wavepoints.points[wavepointIndex];
+    }
+
+    public void Slow(float slowPercentage)
+    {
+        speed = startSpeed * (1f - slowPercentage);
     }
 }
