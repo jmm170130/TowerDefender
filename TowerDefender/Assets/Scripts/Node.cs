@@ -12,6 +12,11 @@ public class Node : MonoBehaviour
     private Renderer render;
     BuildManager buildManager;
 
+    [Header("Optional")]
+    public GameObject weapon;
+
+    private WeaponBlueprint weaponBlueprint;
+
     void Start()
     {
         render = GetComponent<Renderer>();
@@ -19,7 +24,12 @@ public class Node : MonoBehaviour
         buildManager = BuildManager.instance;
     }
 
-    private GameObject weapon;
+    public Vector3 GetBuildPosition()
+    {
+        return transform.position + offset;
+    }
+
+
     void OnMouseDown()
     {
         if(EventSystem.current.IsPointerOverGameObject())
@@ -27,7 +37,7 @@ public class Node : MonoBehaviour
 			return;
 		}
 
-		if(buildManager.GetItemToBuild() == null)
+		if(!buildManager.canBuild)
 		{
 			return;
 		}
@@ -38,8 +48,7 @@ public class Node : MonoBehaviour
         }
 
         //Build the weapon
-        GameObject itemToBuild = buildManager.GetItemToBuild();
-        weapon = (GameObject)Instantiate(itemToBuild, transform.position + offset, transform.rotation);
+        buildManager.BuildWeaponOn(this);
     }
 
     // Highligth the tile the mouse is hovering over
@@ -50,7 +59,7 @@ public class Node : MonoBehaviour
 			return;
 		}
 
-		if(buildManager.GetItemToBuild() == null)
+		if(!buildManager.canBuild)
 		{
 			return;
 		}

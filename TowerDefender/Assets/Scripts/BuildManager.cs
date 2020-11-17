@@ -11,19 +11,37 @@ public class BuildManager : MonoBehaviour
     {
         instance = this;
     }
-   
-    public GameObject GetItemToBuild()
-    {
-        return itemToBuild;
-    }
 
     public GameObject turretPrefab;
     public GameObject laserPrefab;
     public GameObject missileLauncherPrefab;
 
-    private GameObject itemToBuild;
-    public void SetItemToBuild( GameObject item)
+    private WeaponBlueprint itemToBuild;
+ 
+    public bool canBuild { get { return itemToBuild != null; } }
+  
+    public WeaponBlueprint GetItemToBuild()
+    {
+        return itemToBuild;
+    }
+
+    public void SetItemToBuild(WeaponBlueprint item)
     {
         itemToBuild = item;
+    }
+
+    public void BuildWeaponOn(Node node)
+    {
+        if(PlayerStats.Money < itemToBuild.cost)
+        {
+            Debug.Log("Insufficient funds");
+            return;
+        }
+
+        PlayerStats.Money -= itemToBuild.cost;
+
+        GameObject weapon = (GameObject)Instantiate(itemToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
+        node.weapon = weapon;
+        Debug.Log("Remaining Balance: " + PlayerStats.Money);
     }
 }

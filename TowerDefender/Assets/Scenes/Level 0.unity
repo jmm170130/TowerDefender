@@ -3241,6 +3241,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f146e9c862679034a8389892afb44095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turret:
+    prefab: {fileID: 2485119617257524827, guid: 9cd913f56e4eb004ebece3a3e99a0473,
+      type: 3}
+    cost: 100
+  laser:
+    prefab: {fileID: 2051502990173792826, guid: 4a63c2f91e76a594f8fcab9f689d683f,
+      type: 3}
+    cost: 100
+  missileLauncher:
+    prefab: {fileID: 1764436958581616648, guid: 1a79590934700774ca95ca6b4f96ccf7,
+      type: 3}
+    cost: 300
 --- !u!1001 &327803163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21029,6 +21041,7 @@ GameObject:
   - component: {fileID: 2088153062}
   - component: {fileID: 2088153063}
   - component: {fileID: 2088153064}
+  - component: {fileID: 2088153065}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -21065,7 +21078,7 @@ MonoBehaviour:
   attackerPrefab: {fileID: 8344358597722521218, guid: 0e62a6f40d7c8204ea95a4998c1a1293,
     type: 3}
   spawnPoint: {fileID: 17643727}
-  intervalTime: 5
+  intervalTime: 8
 --- !u!114 &2088153062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21110,6 +21123,19 @@ MonoBehaviour:
     type: 3}
   missileLauncherPrefab: {fileID: 1764436958581616648, guid: 1a79590934700774ca95ca6b4f96ccf7,
     type: 3}
+--- !u!114 &2088153065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088153059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c83d2f6eab2e0044aca79462b335734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 500
 --- !u!1001 &2090621412
 PrefabInstance:
   m_ObjectHideFlags: 0

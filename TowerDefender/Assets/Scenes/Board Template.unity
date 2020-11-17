@@ -12966,6 +12966,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1698905944, guid: 0e62a6f40d7c8204ea95a4998c1a1293, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8344358597722521218, guid: 0e62a6f40d7c8204ea95a4998c1a1293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21766,7 +21770,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2088153061
 MonoBehaviour:
@@ -22705,5 +22709,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8b7a2ddfecea8479c91cc7a6e47bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   range: 15
+  fireRate: 1
+  bulletPrefab: {fileID: 0}
+  useLaser: 0
+  lineRenderer: {fileID: 0}
+  slowPercentage: 0.5
+  turnSpeed: 10
+  partToRotate: {fileID: 0}
+  firePoint: {fileID: 0}

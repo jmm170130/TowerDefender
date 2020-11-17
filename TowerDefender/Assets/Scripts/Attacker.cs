@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class Attacker : MonoBehaviour
 {
@@ -7,15 +8,19 @@ public class Attacker : MonoBehaviour
     [HideInInspector]
     public float speed;
     public float maxHealth;
+    public int worth;
     private float health;
-    private bool dead;
+    private bool dead = false;
     private Transform target;
     private int wavepointIndex = 0;
+
+    public Image Healthbar;
 
     void Start()
     {
         target = Wavepoints.points[0];
         speed = startSpeed;
+        health = maxHealth;
     }
 
     void Update()
@@ -45,5 +50,23 @@ public class Attacker : MonoBehaviour
     public void Slow(float slowPercentage)
     {
         speed = startSpeed * (1f - slowPercentage);
+    }
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        Healthbar.fillAmount = health / maxHealth;
+        
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        dead = true;
+        PlayerStats.Money += worth;
+        Destroy(gameObject);
     }
 }
