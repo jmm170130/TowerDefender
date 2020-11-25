@@ -9,7 +9,7 @@ public class WaveSpawner : MonoBehaviour
     public float intervalTime = 5f;
     private float countdown = 2f;
     private int waveIndex = 0;
-    private int numWaves = 5;
+    public int numWaves = 5;
 
     void Update()
     {
@@ -34,7 +34,7 @@ public class WaveSpawner : MonoBehaviour
         for (int i = 0; i < waveIndex; i++)
         {
             spawnAttacker();
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.7f);
         }
     }
 

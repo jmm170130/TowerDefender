@@ -10,6 +10,10 @@ public class LivesCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        lives.text = "LIVES: " + PlayerStats.LivesLeft.ToString();
+        if (PlayerStats.LivesLeft >= 0)
+        {
+            lives.text = "LIVES: " + PlayerStats.LivesLeft.ToString();
+        }
+        
     }
 }

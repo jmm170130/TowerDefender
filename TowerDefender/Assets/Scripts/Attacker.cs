@@ -65,7 +65,15 @@ public class Attacker : MonoBehaviour
 
     void Die()
     {
-        PlayerStats.Money += worth;
+        if (PlayerStats.Money + worth <= 9999)
+        {
+            PlayerStats.Money += worth;
+        }
+        else
+        {
+            PlayerStats.Money = 9999;
+        }
+
         Destroy(gameObject);
     }
 }

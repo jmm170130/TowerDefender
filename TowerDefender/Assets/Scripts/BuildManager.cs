@@ -43,6 +43,6 @@ public class BuildManager : MonoBehaviour
 
         GameObject weapon = (GameObject)Instantiate(itemToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
         node.weapon = weapon;
-        Debug.Log("Remaining Balance: " + PlayerStats.Money);
+        //Debug.Log("Remaining Balance: " + PlayerStats.Money);
     }
 }
