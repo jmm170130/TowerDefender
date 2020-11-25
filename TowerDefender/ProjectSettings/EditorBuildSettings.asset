@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Board Template.unity
-    guid: 32e025a2c09e7d44a83232e8fec34090
+    path: Assets/Scenes/MainMenu.unity
+    guid: c1e9245814f255748a866107b5718d5f
+  - enabled: 1
+    path: Assets/Scenes/Level 0.unity
+    guid: 955b55e50d26aa44b823b1e3af5d7a53
   m_configObjects: {}
