@@ -23,6 +23,12 @@ public class WaveSpawner : MonoBehaviour
             return; 
         }
 
+        if (waveIndex == numWaves)
+        {
+            gameManager.WinLevel();
+            this.enabled = false;
+        }
+
         if (countdown <= 0f)
         {
             StartCoroutine(spawnWave());
@@ -41,12 +47,6 @@ public class WaveSpawner : MonoBehaviour
         {
             spawnAttacker();
             yield return new WaitForSeconds(0.7f);
-        }
-
-        if(waveIndex == numWaves)
-        {
-            gameManager.WinLevel();
-            this.enabled = false;
         }
     }
 

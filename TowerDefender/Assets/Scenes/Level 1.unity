@@ -3295,7 +3295,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 868326306}
         m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
@@ -9543,8 +9543,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1fd2ba11f7056a4e89c883f2ecaab53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: Level 2
-  levelToUnlock: 2
 --- !u!95 &868326307
 Animator:
   serializedVersion: 3
