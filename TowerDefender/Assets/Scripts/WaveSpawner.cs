@@ -4,26 +4,32 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour
 {
+    public static int numAttackersAlive = 0;
+
     public Transform attackerPrefab;
     public Transform spawnPoint;
+
     public float intervalTime = 5f;
+    public GameManager gameManager;
+    public int numWaves = 5;
+
     private float countdown = 2f;
     private int waveIndex = 0;
-    public int numWaves = 5;
 
     void Update()
     {
-        if (waveIndex == numWaves)
+        if (numAttackersAlive > 0)
         {
-            return;
+            return; 
         }
 
         if (countdown <= 0f)
         {
-            //spawnWave();
             StartCoroutine(spawnWave());
             countdown = intervalTime;
+            return;
         }
+
         countdown -= Time.deltaTime;
     }
 
@@ -36,10 +42,17 @@ public class WaveSpawner : MonoBehaviour
             spawnAttacker();
             yield return new WaitForSeconds(0.7f);
         }
+
+        if(waveIndex == numWaves)
+        {
+            gameManager.WinLevel();
+            this.enabled = false;
+        }
     }
 
     void spawnAttacker()
     {
         Instantiate(attackerPrefab, spawnPoint.position, spawnPoint.rotation);
+        numAttackersAlive++;
     }
 }

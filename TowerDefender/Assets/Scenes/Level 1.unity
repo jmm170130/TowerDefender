@@ -9543,7 +9543,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1fd2ba11f7056a4e89c883f2ecaab53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelsText: {fileID: 0}
+  nextLevel: Level 2
+  levelToUnlock: 2
 --- !u!95 &868326307
 Animator:
   serializedVersion: 3
@@ -21915,7 +21916,8 @@ MonoBehaviour:
   attackerPrefab: {fileID: 8344358597722521218, guid: 0e62a6f40d7c8204ea95a4998c1a1293,
     type: 3}
   spawnPoint: {fileID: 17643727}
-  intervalTime: 8
+  intervalTime: 3
+  gameManager: {fileID: 2088153062}
   numWaves: 5
 --- !u!114 &2088153062
 MonoBehaviour:
@@ -21930,6 +21932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 298896109}
+  completeLevelUI: {fileID: 868326304}
 --- !u!114 &2088153063
 MonoBehaviour:
   m_ObjectHideFlags: 0

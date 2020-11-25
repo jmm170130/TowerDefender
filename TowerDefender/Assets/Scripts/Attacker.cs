@@ -12,6 +12,7 @@ public class Attacker : MonoBehaviour
     private float health;
     private Transform target;
     private int wavepointIndex = 0;
+    private bool isDead = false;
 
     public Image Healthbar;
 
@@ -40,6 +41,7 @@ public class Attacker : MonoBehaviour
         if (wavepointIndex >= Wavepoints.points.Length - 1)
         {
             PlayerStats.LivesLeft--;
+            WaveSpawner.numAttackersAlive--;
             Destroy(gameObject);
             return;
         }
@@ -57,7 +59,7 @@ public class Attacker : MonoBehaviour
         health -= damage;
         Healthbar.fillAmount = health / maxHealth;
         
-        if (health <= 0)
+        if (health <= 0 && !isDead)
         {
             Die();
         }
@@ -65,6 +67,8 @@ public class Attacker : MonoBehaviour
 
     void Die()
     {
+        isDead = true;
+
         if (PlayerStats.Money + worth <= 9999)
         {
             PlayerStats.Money += worth;
@@ -74,6 +78,7 @@ public class Attacker : MonoBehaviour
             PlayerStats.Money = 9999;
         }
 
+        WaveSpawner.numAttackersAlive--;
         Destroy(gameObject);
     }
 }
