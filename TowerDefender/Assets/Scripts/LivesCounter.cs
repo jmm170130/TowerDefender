@@ -1,18 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
-public class WaveSpawner : MonoBehaviour
+public class LivesCounter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Text lives;
 
     // Update is called once per frame
     void Update()
     {
-        
+        lives.text = "LIVES: " + PlayerStats.LivesLeft.ToString();
     }
 }
