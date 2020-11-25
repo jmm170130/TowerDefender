@@ -7,7 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
 	public GameObject ui;
 
-	void Update()
+	public void Update()
 	{
 		// Show the pause menu when 'P' is pressed
 		if( Input.GetKeyDown(KeyCode.P) )

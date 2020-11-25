@@ -19,6 +19,7 @@ public class BuildManager : MonoBehaviour
     private WeaponBlueprint itemToBuild;
  
     public bool canBuild { get { return itemToBuild != null; } }
+    public bool hasSufficientFund { get { return PlayerStats.Money >= itemToBuild.cost; } }
   
     public WeaponBlueprint GetItemToBuild()
     {

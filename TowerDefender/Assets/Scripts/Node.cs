@@ -63,7 +63,16 @@ public class Node : MonoBehaviour
 		{
 			return;
 		}
-        render.material.color = hoverColor;
+
+        if( buildManager.hasSufficientFund )
+        {
+            render.material.color = hoverColor;
+        }
+        else
+        {
+            render.material.color = Color.red;
+        }
+
     }
 
     void OnMouseExit()

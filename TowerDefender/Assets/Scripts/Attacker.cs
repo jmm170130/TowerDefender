@@ -10,7 +10,6 @@ public class Attacker : MonoBehaviour
     public float maxHealth;
     public int worth;
     private float health;
-    private bool dead = false;
     private Transform target;
     private int wavepointIndex = 0;
 
@@ -40,6 +39,7 @@ public class Attacker : MonoBehaviour
     {
         if (wavepointIndex >= Wavepoints.points.Length - 1)
         {
+            PlayerStats.LivesLeft--;
             Destroy(gameObject);
             return;
         }
@@ -65,7 +65,6 @@ public class Attacker : MonoBehaviour
 
     void Die()
     {
-        dead = true;
         PlayerStats.Money += worth;
         Destroy(gameObject);
     }

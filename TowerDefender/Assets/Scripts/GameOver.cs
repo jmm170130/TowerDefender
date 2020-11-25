@@ -8,13 +8,6 @@ public class GameOver : MonoBehaviour
 {
     public Text levelsText;
 
-    /*
-    void onEnable()
-    {
-         levelsText.text = PlayerStats.Rounds.ToString();
-    }
-    */
-
     public void Retry()
     {
         SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex );

@@ -5,11 +5,17 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public float cameraSpeed = 30f;
-    public float minY = 15f, maxY = 80f;
+    public float minY = 15f, maxY = 100f;
 
     // Update is called once per frame
     void Update()
     {
+        if( GameManager.GameOver)
+        {
+            this.enabled = false;
+            return;
+        }
+
         // Move camera up
         if( Input.GetKey("w") )
         {
