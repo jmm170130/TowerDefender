@@ -11,10 +11,10 @@ public class WinLevel : MonoBehaviour
         SceneManager.LoadScene("Level 2");
     }
 
-    //public void toLv3()
-    //{
-    //    //SceneManager.LoadScene("Level 3");
-    //}
+    public void toLv3()
+    {
+        SceneManager.LoadScene("Level 3");
+    }
 
     public void Menu()
     {
