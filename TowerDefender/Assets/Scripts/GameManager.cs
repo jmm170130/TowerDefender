@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static bool GameOver;
-    public static bool LevelClear = false;
+    //public static bool LevelClear = false;
     public GameObject gameOverUI;
     public GameObject completeLevelUI;
 

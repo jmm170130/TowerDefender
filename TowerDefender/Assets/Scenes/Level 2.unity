@@ -8503,7 +8503,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1817114157}
-        m_MethodName: toLv3
+        m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14217,8 +14217,8 @@ RectTransform:
   m_Children:
   - {fileID: 327543252}
   - {fileID: 298896110}
-  - {fileID: 1627152521}
   - {fileID: 1817114156}
+  - {fileID: 1627152521}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16386,7 +16386,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1817114157}
         m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
@@ -17068,7 +17068,7 @@ RectTransform:
   - {fileID: 2136835846}
   - {fileID: 1072687707}
   m_Father: {fileID: 1289897683}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -18490,7 +18490,7 @@ RectTransform:
   - {fileID: 787957570}
   - {fileID: 1564710183}
   m_Father: {fileID: 1289897683}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -18509,7 +18509,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1fd2ba11f7056a4e89c883f2ecaab53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelsText: {fileID: 0}
 --- !u!95 &1817114158
 Animator:
   serializedVersion: 3
@@ -21932,6 +21931,7 @@ MonoBehaviour:
     type: 3}
   spawnPoint: {fileID: 17643727}
   intervalTime: 8
+  gameManager: {fileID: 0}
   numWaves: 5
 --- !u!114 &2088153062
 MonoBehaviour:
@@ -21946,6 +21946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 298896109}
+  completeLevelUI: {fileID: 1817114155}
 --- !u!114 &2088153063
 MonoBehaviour:
   m_ObjectHideFlags: 0

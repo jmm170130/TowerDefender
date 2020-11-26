@@ -16,6 +16,13 @@ public class WaveSpawner : MonoBehaviour
     private float countdown = 2f;
     private int waveIndex = 0;
 
+    void Start()
+    {
+        waveIndex = 0;
+        numAttackersAlive = 0;
+        this.enabled = true;
+    }
+
     void Update()
     {
         if (numAttackersAlive > 0)
